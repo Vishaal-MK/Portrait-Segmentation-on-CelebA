@@ -36,7 +36,7 @@ The model resulted in 33 million trainable parameters (maybe overkill?). We skip
 
 ### Preview
 
-                    Image                               Ground Truth                              Prediction
+                    Image                               Ground Truth                            Prediction
 ![SegNet Output 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/SegNet%201.png)
 
 ![SegNet Output 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/SegNet%202.png)
@@ -66,7 +66,7 @@ We're using a simplified architecture with one less layer in encoder and decoder
 
 ### Preview
 
-                    Image                               Ground Truth                              Prediction
+                    Image                               Ground Truth                            Prediction
 ![UNet Output 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/UNet%201.png)
 
 ![UNet Output 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/UNet%202.png)
