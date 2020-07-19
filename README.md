@@ -10,7 +10,7 @@ Apply an automatic portrait segmentation model (aka image matting) to [celebrity
 
 ## Introduction
 
-Portrait segmentation can be considered a specialised case of semantic segmentation with only two classes (subject and backgorund). As such we will explore two semantic segmentation architectures, namely, SegNet and UNet.
+Portrait segmentation can be considered a specialised case of semantic segmentation with only two classes (subject and background). As such we will explore two semantic segmentation architectures, namely, SegNet and UNet.
 
 [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) is a fork of CelebA dataset with annotations which is used for training the following models. (No manual annotations, just a little preprocessing. Whew!!)
 
@@ -25,7 +25,7 @@ SegNet is a symmetrical architecture that adopts an encoder-decoder framework. T
 
 ![SegNet Architecture](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/SegNet%20Architecture.png)
 
-The model resulted in 33 million trainanble parameters (maybe overkill?). We skip data augmentation since we have 30,000 images to train the models on.
+The model resulted in 33 million trainable parameters (maybe overkill?). We skip data augmentation since we have 30,000 images to train the models on.
 
 ### Results
 
@@ -36,6 +36,7 @@ The model resulted in 33 million trainanble parameters (maybe overkill?). We ski
 
 ### Preview
 
+                   *Image*                            *Ground Truth*                       *Prediction*
 ![SegNet Output 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/SegNet%201.png)
 
 ![SegNet Output 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/SegNet%202.png)
@@ -65,6 +66,7 @@ We're using a simplified architecture with one less layer in encoder and decoder
 
 ### Preview
 
+                   *Image*                            *Ground Truth*                       *Prediction*
 ![UNet Output 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/UNet%201.png)
 
 ![UNet Output 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/UNet%202.png)
@@ -91,6 +93,8 @@ To improve model :
 1. Train with images having higher background complexity to better segment portraits.
 2. Train with bigger images (chose smaller images to reduce training time).
 3. Add more layers akin to the model presented in the paper.
+
+Experimented with FCN-8 (VGG-16 backbone) but could never quite get it to perform well and the model was way too complex to train multiple times. Should try simplifying the model and using different backbone architechtures. Portrait FCN has some very good results I'd like to explore.
 
 ---
 
