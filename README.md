@@ -12,7 +12,7 @@ Apply an automatic portrait segmentation model (aka image matting) to [celebrity
 
 Portrait segmentation can be considered a specialised case of semantic segmentation with only two classes (subject and backgorund). As such we will explore two semantic segmentation architectures, namely, SegNet and UNet.
 
-CelebAMask-HQ is a fork of CelebA dataset with annotations which is used for training the following models. (No manual annotations, just a little preprocessing. Whew!!)
+[CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) is a fork of CelebA dataset with annotations which is used for training the following models. (No manual annotations, just a little preprocessing. Whew!!)
 
 
 ---
@@ -84,4 +84,17 @@ The model performs as advertised with very good performance in just one epoch of
 
 ## Inference
 
-Model can be improved if trained with images having more complex backgrounds and bigger size (chose smaller size to reduce train time)
+The UNet model works well on images with simple backgrounds and is able to segment parts of most portraits like accessories, hair and clothing. It starts to struggle when posed with complicated backgrounds.
+
+To improve model :
+1. Train with images having higher background complexity to better segment portraits.
+2. Train with bigger images (chose smaller images to reduce training time).
+3. Add more layers akin to the model presented in the paper.
+
+---
+
+## References
+
+[1]*SegNet* Vijay Badrinarayanan, Alex Kendall, Roberto Cipolla. [SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation](https://arxiv.org/pdf/1511.00561.pdf)
+
+[2]*UNet* Olaf Ronneberger, Philipp Fischer, Thomas Brox. [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
