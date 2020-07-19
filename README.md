@@ -76,9 +76,9 @@ The model performs as advertised with very good performance in just one epoch of
 
 ## Test Image Results
 
-![Test 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result%201.png)
+![Test 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result1.png)
 
-![Test 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result%202.png)
+![Test 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result2.png)
 
 ---
 
