@@ -70,7 +70,18 @@ We're using a simplified architecture with one less layer in encoder and decoder
 
 ### Conclusion
 
-The model performs as advertised with very good performance in just one epoch of training. The numbers are nudged a little higher with more training. The predcitions look great after enhancement.
+The model performs as advertised with very good performance in just one epoch of training. The numbers are nudged a little higher with more training. The predcitions look sharp after enhancement.
+
+---
 
 ## Test Image Results
 
+![Test 1](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result%201.png)
+
+![Test 2](https://github.com/Vishaal-MK/Portrait-Segmentation-on-CelebA/blob/master/Images/Result%202.png)
+
+---
+
+## Inference
+
+Model can be improved if trained with images having more complex backgrounds and bigger size (chose smaller size to reduce train time)
