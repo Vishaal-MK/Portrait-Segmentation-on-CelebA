@@ -14,6 +14,7 @@ Portrait segmentation can be considered a specialised case of semantic segmentat
 
 [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) is a fork of CelebA dataset with annotations which is used for training the following models. (No manual annotations, just a little preprocessing. Whew!!)
 
+All training was done in Google Colab
 
 ---
 
