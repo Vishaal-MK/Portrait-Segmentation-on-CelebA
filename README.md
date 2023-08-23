@@ -1,5 +1,4 @@
 # Portrait Segmentation on CelebAMask-HQ
-Challenge submission for fellowship.ai 
 
 ## Image Segmentation
 Apply an automatic portrait segmentation model (aka image matting) to [celebrity face](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
@@ -15,6 +14,7 @@ Portrait segmentation can be considered a specialised case of semantic segmentat
 [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ) is a fork of CelebA dataset with annotations which is used for training the following models. (No manual annotations, just a little preprocessing. Whew!!)
 
 All training was done in Google Colab
+https://colab.research.google.com/drive/1d6dIW0RvqAgccXpj30Ik5zU2sf9zO1zH
 
 ---
 
